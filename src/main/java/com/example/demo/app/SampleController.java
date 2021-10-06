@@ -13,6 +13,8 @@ public class SampleController {
 	public String test(Model model) {
 		model.addAttribute("title", "タイトル");
 		return "test";
+		
+		//これはテストText
 	}
 
 }
