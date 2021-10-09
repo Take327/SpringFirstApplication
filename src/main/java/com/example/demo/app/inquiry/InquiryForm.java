@@ -8,9 +8,9 @@ public class InquiryForm {
 
 	@Size(min = 1, max = 20, message = "20文字以内で入力してください。")
 	private String name;
-	
+
 	@NotNull
-	@Email(message ="メールアドレスの形式トで入力してください。")
+	@Email(message = "メールアドレスの形式で入力してください。")
 	private String email;
 	@NotNull
 	private String contents;
@@ -41,4 +41,9 @@ public class InquiryForm {
 	public void setContents(String contents) {
 		this.contents = contents;
 	}
+
+	public String toString() {
+		return "[name:" + name + " email:" + email + " contents:" + contents;
+	}
+
 }
